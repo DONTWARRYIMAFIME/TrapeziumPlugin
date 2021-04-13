@@ -1,4 +1,4 @@
-package org.paintFX.plugins.TrapeziumPlugin;
+package org.paintFX.trapezium;
 
 import javafx.scene.canvas.GraphicsContext;
 import org.paintFX.core.*;

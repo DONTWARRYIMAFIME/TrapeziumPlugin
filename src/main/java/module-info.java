@@ -1,10 +1,10 @@
 import org.paintFX.core.IService;
-import org.paintFX.plugins.TrapeziumPlugin.Service;
+import org.paintFX.trapezium.Service;
 
 module Trapezium {
     requires javafx.controls;
     requires core;
 
-    exports org.paintFX.plugins.TrapeziumPlugin;
+    exports org.paintFX.trapezium to PaintFX;
     provides IService with Service;
 }

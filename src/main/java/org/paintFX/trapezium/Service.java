@@ -1,8 +1,8 @@
-package org.paintFX.plugins.TrapeziumPlugin;
+package org.paintFX.trapezium;
 
 import javafx.scene.image.Image;
-import org.paintFX.core.IService;
-import org.paintFX.core.ShapeFactory;
+import org.paintFX.core.*;
+import org.paintFX.trapezium.PluginContext;
 
 public class Service implements IService {
     @Override
@@ -16,7 +16,8 @@ public class Service implements IService {
     }
 
     @Override
-    public ShapeFactory createFactory() {
-        return new TrapeziumFactory();
+    public Shape createShape(double v, SColor sColor, SColor sColor1, PaintMode paintMode) {
+        return new Trapezium(v, sColor, sColor1, paintMode);
     }
+
 }
